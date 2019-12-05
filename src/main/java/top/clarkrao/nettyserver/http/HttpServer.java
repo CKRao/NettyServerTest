@@ -19,7 +19,7 @@ public class HttpServer {
             ServerBootstrap bootstrap = new ServerBootstrap()
                     .group(boosGroup, workGroup)
                     .channel(NioServerSocketChannel.class)
-                    .childOption(ChannelOption.SO_BACKLOG, 1024)
+//                    .childOption(ChannelOption.SO_BACKLOG, 1024)
                     .childHandler(new HttpServerInitializer());
 
             //绑定端口，同步等待成功
